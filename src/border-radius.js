@@ -12,7 +12,7 @@ authors:
 - Long Bui Minh (http://minhlong139.plus.vn/) (minhlong139@gmail.com)
 
 requires:
-   core:1.2.3: 
+   core:1.2: 
    - Element.Style
    - Utilities.Selectors
 
