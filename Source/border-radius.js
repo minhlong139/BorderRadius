@@ -22,7 +22,7 @@ category: Interface
 tags: [border, corner, radius]
 docs: http://minhlong139.plus.vn/BorderRadius/docs/
 demo: http://minhlong139.plus.vn/BorderRadius/demo/
-current: 0.5
+current: 1.0
 
 */
 
