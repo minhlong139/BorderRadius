@@ -1,6 +1,6 @@
 /*
 ---
-script: border-radius.js
+name: BorderRadius
 
 verson: 1.0
 
@@ -16,6 +16,14 @@ requires:
 - Utilities.Selectors
 
 provides: [Element, Elements, $, $$]
+
+category: Interface
+
+tags: [border, corner, radius]
+docs: http://minhlong139.plus.vn/BorderRadius/docs/
+demo: http://minhlong139.plus.vn/BorderRadius/demo/
+current: 0.5
+
 */
 
 var BorderRadius = new Class({

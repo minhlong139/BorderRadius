@@ -1,7 +1,15 @@
 name: BorderRadius
+verson: 1.0
+description: BorderRadius - Mootools plugin to round corners
+license: MIT-style
 author: minhlong139
+requires:
+- core:1.2: 
+- Element.Style
+- Utilities.Selectors
+provides: [Element, Elements, $, $$]
 category: Interface
 tags: [border, corner, radius]
-#docs: http://minhlong139.plus.vn/BorderRadius/docs/
-#demo: http://minhlong139.plus.vn/BorderRadius/demo/
-#current: 0.5
+docs: http://minhlong139.plus.vn/BorderRadius/docs/
+demo: http://minhlong139.plus.vn/BorderRadius/demo/
+current: 0.5
