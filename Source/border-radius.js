@@ -1,30 +1,17 @@
 /*
 ---
-name: BorderRadius
-
-verson: 1.0
-
+script: border-radius.js
 description: BorderRadius - Mootools plugin to round corners
-
-license: MIT-style
-
-authors: Long Bui Minh (http://minhlong139.plus.vn/) (minhlong139@gmail.com)
-
+license: MIT-style license.
+authors: 
+    - Long Bui Minh (http://minhlong139.plus.vn/) (minhlong139@gmail.com)
 requires:
-- core:1.2: 
-- Element.Style
-- Utilities.Selectors
-
+    core:1.2.3: 
+    - Element.Style
+    - Utilities.Selectors
 provides: [Element, Elements, $, $$]
-
-category: Interface
-
-tags: [border, corner, radius]
-docs: http://minhlong139.plus.vn/BorderRadius/docs/
-demo: http://minhlong139.plus.vn/BorderRadius/demo/
-current: 1.0
-
 */
+
 
 var BorderRadius = new Class({
   
