@@ -5,7 +5,7 @@ BORDER RADIUS: NO CSS & NO IMAGES.
 
 BorderRadius is a Mootools's Plugin. BorderRadius makes corner more beautiful but does not use External Style Sheet or Images, it uses javascript only
 
-![Screenshot](http://img195.imageshack.us/img195/6871/demouh.png)
+![Screenshot](http://img138.imageshack.us/img138/6082/demox.png)
 
 How to use
 ----------
