@@ -148,9 +148,8 @@ var BorderRadius = new Class({
 	if (height>0) this.wrapper.setStyle('height', height);
   },
   
-  buildByCss3: function() {    
-    if (Browser.Engine.gecko || Browser.Engine.webkit) {
-      var engine = Browser.Engine.gecko?'gecko':'webkit';      
+  buildByCss3: function() {
+    if (this.checkBorderRadius()) {
       var styles = {
         gecko: {
           '-moz-border-radius-topleft': this.options.radiusTop,
@@ -165,12 +164,28 @@ var BorderRadius = new Class({
           '-webkit-border-bottom-right-radius': this.options.radiusBottom
         }
       }
-      this.element.setStyles(styles[engine]);
-      return true;
-    } else {
-      return false;  
-    }
+      if (styles[Browser.Engine.name]) {
+        this.element.setStyles(styles[Browser.Engine.name]);
+        return true;
+      }
+    }    
+    return false;  
+  },
+  
+  /*
+   * Many thanks to the Arian Stolwijk (http://www.aryweb.nl/) for checkBorderRadius() idea.
+   */
+  checkBorderRadius: function(){
+    var docEl = document.documentElement, s;
+    if (docEl && (s = docEl.style)) {
+      return (typeof s.borderRadius == 'string'
+        || typeof s.MozBorderRadius == 'string'
+        || typeof s.WebkitBorderRadius == 'string'
+        || typeof s.KhtmlBorderRadius == 'string');
+      }
+    return null;
   }
+
 });
 
 Element.implement({
