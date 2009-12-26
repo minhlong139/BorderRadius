@@ -143,8 +143,9 @@ var BorderRadius = new Class({
   autoResize: function() {
     var h = 0;
     for (var id in this.borderRadier)
-      h+= this.borderRadier[id].clientHeight;
-    this.wrapper.setStyle('height', this.element.clientHeight - h - this.paddingTop - this.paddingBottom);
+      h+= this.borderRadier[id].getSize().y;
+	var height = this.element.getSize().y - h - this.paddingTop - this.paddingBottom;
+	if (height>0) this.wrapper.setStyle('height', height);
   },
   
   buildByCss3: function() {    
