@@ -23,9 +23,11 @@ How to use
 	/* other way */
 	new BorderRadius($('#box'), {'radius': 10});
 	
-### HTML:
-Property options is optional:
-    <div id="box" options="{'radiusBottomRight':0, 'radiusTopLeft':0, 'css3': false}">Border Radius</div>
+### HTML (Property options is optional):
+
+    <div id="box" options="{'radiusBottomRight':0, 'radiusTopLeft':0, 'css3': false}">
+        Border Radius
+    </div>
     
 Options:
 ----------
