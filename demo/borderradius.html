@@ -2,14 +2,14 @@
 <head>
     <script type="text/javascript" src="../mootools/mootools-1.2.1-core.js"></script>
     <script type="text/javascript" src="../mootools/mootools-1.2-more.js"></script>
-    <script type="text/javascript" src="../Source/border-radius.js"></script>
+    <script type="text/javascript" src="../Source/border-radius-yui.js"></script>
     <style>
         html * {font-family:"Trebuchet MS",Verdana,Arial,sans-serif;font-size:10pt}
         .border-radius p, .border-radius h4 {margin: 0 0 5px 0;}
         
-        .s1 {background:#FFF9D2;border: 1px solid #C9C39E;margin: 5px;width:300px;}
+        .s1 {background:#FFF9D2;border: 1px solid #C9C39E;margin: 5px;width:300px;padding:0 10px;}
         .s2 {background:#cdcdcd;padding: 10px;margin: 5px;}
-        .s3 {background:#FEC2C2;border: 2px dotted #E98F8F;padding: 20px;margin: 5px;position:relative;top:-200px;left:400px;width:70%;}
+        .s3 {background:#FEC2C2;padding: 20px;margin: 5px;position:relative;top:-170px;left:400px;width:70%;}
         .s4 {background:#A2D4FF;padding:10px;position:absolute;right:50px;top:50px;width:200px;border: 2px solid #64A3D9;}
         .box {width:400px;}
         
@@ -23,10 +23,10 @@
 </head>
 
 <body>    
-    <div id="example1" class="border-radius s1" options="{'radius':10, 'css3': false}">
+    <div id="example1" class="border-radius s1" options="{'radiusTopLeft':20, 'radiusBottomRight': 20, 'css3': false}">
         <p>#Example 1:</p>
-        <p>- Options: {Radius: 10, css3: false}</p>
-        <p>- Styles: {position: static (Default); padding:0; border: 1px;width: 300px}</p>
+        <p>- Options: {radiusTopLeft: 20, radiusBottomRight: 20, css3: false}</p>
+        <p>- Styles: {position: static (Default); padding:0 10px; border: 1px;width: 300px}</p>
     </div>      
     <div class="box">
         <div id="example2" class="border-radius s2" options="{'radius':15}">
@@ -35,9 +35,9 @@
             <p>- css3: true means we rounded corner by Browser which supported CSS3 (FireFox, Safari, Chrome...)</p>
             <p>- Styles: {position: static (Default); padding:10px; border: 0;width: auto(depends on parentNode)}</p>
         </div>
-        <div id="example3" class="border-radius s3" options="{'radiusTop':5, 'radiusBottom': 25, 'css3': false}">
+        <div id="example3" class="border-radius s3" options="{'radius': 15, 'css3': false}">
             <p>#Example 3:</p>
-            <p>- Options: {radiusTop: 5, radiusBottom: 25, css3: false}</p>
+            <p>- Options: {radius: 15, css3: false}</p>
             <p>- Styles: {position: relative (belong to #example2); padding:10px; border: 0;width: 70%(depends on parentNode)}</p>
         </div>
     </div>
