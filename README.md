@@ -24,10 +24,10 @@ How to use
 	new BorderRadius($('#box'), {'radius': 10});
 	
 ### HTML (property options is optional):
-    #HTML
     <div id="box" options="{'radiusBottomRight':0, 'radiusTopLeft':0, 'css3': false}">Border Radius</div>
     
-### Options:
+Options:
+----------
     * radiusTopLeft - (integer: defaults to 0) Radius of top left border corner.
     * radiusBottomLeft - (integer: defaults to 0) Radius of bottom left border corner.
     * radiusTopRight - (integer: defaults to 0) Radius of top right border corner.
@@ -41,9 +41,8 @@ How to use
     * borderColor - (color: defaults to null) Fix border color.
     * css3 - (boolean: defaults to true) By default BorderRadius make radius corners by CSS3 if currently browser supported, else BorderRadius create radius corners by itself. If you want to make consitent, set css3 to false
     
-What's new?
+What is new in 1.2?
 ----------
-### Version 1.2:
     - Implement BorderRadius options by html property
     - Specify radius for each corners: top-left, top-right, bottom-left, bottom-right
 
