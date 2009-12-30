@@ -28,21 +28,21 @@ How to use
     
 Options:
 ----------
-    * radiusTopLeft - (integer: defaults to 0) Radius of top left border corner.
-    * radiusBottomLeft - (integer: defaults to 0) Radius of bottom left border corner.
-    * radiusTopRight - (integer: defaults to 0) Radius of top right border corner.
-    * radiusBottomRight - (integer: defaults to 0) Radius of bottom right border corner.
-    * radiusTop - (integer: defaults to 0) Radius of top left and top right border corner.
-    * radiusBottom - (integer: defaults to 0) Radius of bottom left and bottom right border corner.
-    * radius - (integer: defaults to 0) Radius of 4 border corners.
-    * parentBgColor - (color: defaults to '#fff') Fix parent element's background color.
-    * borderWidth - (integer: defaults to null) Fix border width.
-    * borderStyle - (string: defaults to null) Fix border style.
-    * borderColor - (color: defaults to null) Fix border color.
-    * css3 - (boolean: defaults to true) By default BorderRadius make radius corners by CSS3 if currently browser supported, else BorderRadius create radius corners by itself. If you want to make consitent, set css3 to false
+* radiusTopLeft - (integer: defaults to 0) Radius of top left border corner.
+* radiusBottomLeft - (integer: defaults to 0) Radius of bottom left border corner.
+* radiusTopRight - (integer: defaults to 0) Radius of top right border corner.
+* radiusBottomRight - (integer: defaults to 0) Radius of bottom right border corner.
+* radiusTop - (integer: defaults to 0) Radius of top left and top right border corner.
+* radiusBottom - (integer: defaults to 0) Radius of bottom left and bottom right border corner.
+* radius - (integer: defaults to 0) Radius of 4 border corners.
+* parentBgColor - (color: defaults to '#fff') Fix parent element's background color.
+* borderWidth - (integer: defaults to null) Fix border width.
+* borderStyle - (string: defaults to null) Fix border style.
+* borderColor - (color: defaults to null) Fix border color.
+* css3 - (boolean: defaults to true) By default BorderRadius make radius corners by CSS3 if currently browser supported, else BorderRadius create radius corners by itself. If you want to make consitent, set css3 to false
     
 What is new in 1.2?
 ----------
-    - Implement BorderRadius options by html property
-    - Specify radius for each corners: top-left, top-right, bottom-left, bottom-right
+- Implement BorderRadius options by html property
+- Specify radius for each corners: top-left, top-right, bottom-left, bottom-right
 
