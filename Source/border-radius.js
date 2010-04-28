@@ -10,7 +10,7 @@ authors:
 requires:
     core/1.2.3: '*'
     
-provides: [Element, Elements, $, $$]
+provides: [BorderRadius]
 
 ...
 */
